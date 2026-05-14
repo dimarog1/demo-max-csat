@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Оцените сервис</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.max.ru/web-app/max-web-app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Экран с вопросом -->
+      <section class="screen screen--question" id="screenQuestion" aria-live="polite">
+        <div class="logo" aria-hidden="true">⭐</div>
+        <p class="greeting" id="greeting"></p>
+        <h1 class="question">Насколько вам всё понравилось?</h1>
+        <div class="ratings" id="ratings" role="group" aria-label="Выберите оценку"></div>
+      </section>
+
+      <!-- Экран благодарности -->
+      <section class="screen screen--thanks" id="screenThanks" aria-live="polite" hidden>
+        <div class="thanks-emoji" id="thanksEmoji" aria-hidden="true"></div>
+        <h1 class="thanks-title">Спасибо за оценку!</h1>
+        <p class="thanks-sub">Ваш отзыв помогает нам становиться лучше</p>
+      </section>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
